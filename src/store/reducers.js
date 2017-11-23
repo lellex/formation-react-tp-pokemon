@@ -1,5 +1,6 @@
 import {
   LOADING,
+  READY,
   FETCHED_POKEMON,
   FETCHED_POKEMON_LIST
 } from './actions'
@@ -16,6 +17,11 @@ export default (state = defaultState, action) => {
       return {
         ...state,
         loading: true
+      }
+    case READY:
+      return {
+        ...state,
+        loading: false
       }
     case FETCHED_POKEMON:
       return {
