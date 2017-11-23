@@ -1,0 +1,18 @@
+.App {
+  display: flex;
+  position: fixed;
+  top: 64px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.PokemonList {
+  width: 200px;
+  height: 100%;
+  overflow: auto;
+}
+
+.Pokemon {
+  flex: 1;
+}
